@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       rel="stylesheet"
@@ -112,11 +113,11 @@
         <h2 class="text-center text-4xl font-bold my-10">About Me</h2>
         <div class="md:flex flex justify-center items-center">
           <div class="md:w-1/2 p-4">
-            <h1 class="text-4xl font-semibold mb-4">
+            <h1 class="md:text-4xl text-2xl font-semibold mb-4">
               <i class="fa-solid fa-hand mb-2"></i> Hello! I'm Jiancarlo
               Tiotangco
             </h1>
-            <p class="text-xl">
+            <p class="md:text-xl text-lg">
               As a skilled full stack web developer, I excel in both frontend
               and backend technologies, creating robust, user-friendly websites.
               My passion for coding drives me to continuously learn and innovate
@@ -141,7 +142,7 @@
           Educational Background
         </h2>
         <div
-          class="md:flex justify-center space-y-6 md:space-y-0 md:space-x-10"
+          class="md:flex justify-center text-lg space-y-6 md:space-y-0 md:space-x-10"
         >
           <div class="text-center">
             <img
@@ -150,7 +151,8 @@
               alt="high school logo"
             />
             <p>Senior High School Graduate</p>
-            <p>ICT Strand, S.Y. 2020-2021</p>
+            <p>ICT Strand</p>
+            <p>S.Y. 2020-2021</p>
             <p>Manuel A. Roxas National High School</p>
           </div>
           <div class="text-center">
@@ -160,7 +162,8 @@
               alt="Mapua logo"
             />
             <p>Accomplished 3 Semesters</p>
-            <p>BS Computer Engineering, A.Y. 2021-2022</p>
+            <p>BS Computer Engineering</p>
+            <p>A.Y. 2021-2022</p>
             <p>Mapua University</p>
           </div>
           <div class="text-center">
@@ -220,7 +223,8 @@
       </div>
     </section>
 
-    <!-- Projects -->
+    <!-- PROJECTS -->
+
     <section id="projects" class="py-16 bg-[#A79680]">
       <div class="container mx-auto">
         <h2 class="text-center text-4xl font-bold my-10">Top Projects</h2>
@@ -228,29 +232,32 @@
         <!-- Project 1 -->
         <div class="flex flex-col md:flex-row items-center mb-10">
           <div class="md:w-1/2 p-4">
-            <h3 class="text-3xl font-semibold">GameDev</h3>
-            <p>
-              Empowering financial futures with tailored solutions and
-              compassionate client support.
+            <h3 class="text-3xl font-semibold">
+              GameDev w/ CRUD Functionality
+            </h3>
+            <p class="text-lg">
+              A game library website built with Laravel/PHP and Tailwind CSS
+              offers CRUD functionality and an "Add to Library" feature, storing
+              game details in a MySQL database for easy management.
             </p>
           </div>
           <div class="md:w-1/2 p-4">
             <img
-              src="./images/KodeLedger.jpg"
-              class="rounded-lg w-full mb-4"
+              src="./images/capstone.png"
+              class="rounded-lg w-full mb-4 card"
               alt="Project 1"
             />
             <div class="flex space-x-4">
-              <a
-                href="https://cheery-phoenix-dc3079.netlify.app"
+              <!-- <a
+                href=""
                 target="_blank"
                 class="btn border rounded p-2 hover:bg-[#736665] hover:text-white"
                 >Live Preview</a
-              >
+              > -->
               <a
-                href="https://github.com/jianjio/KodeLedger/commit/7da5bea746317942a37ff98553fd3a135a42a8ab"
+                href="https://github.com/jianjio/Capstone-latest-latest"
                 target="_blank"
-                class="btn border rounded p-2 hover:bg-[#736665] hover:text-white"
+                class="btn border-2 rounded p-2 hover:bg-[#736665] hover:text-white"
                 >Code Source</a
               >
             </div>
@@ -260,60 +267,31 @@
         <!-- Project 2 -->
         <div class="flex flex-col md:flex-row items-center mb-10">
           <div class="md:w-1/2 p-4">
-            <img
-              src="./images/KodeLedger.jpg"
-              class="rounded-lg w-full mb-4"
-              alt="Project 1"
-            />
-            <div class="flex space-x-4">
-              <a
-                href="https://cheery-phoenix-dc3079.netlify.app"
-                target="_blank"
-                class="btn border rounded p-2 hover:bg-[#736665] hover:text-white"
-                >Live Preview</a
-              >
-              <a
-                href="https://github.com/jianjio/KodeLedger/commit/7da5bea746317942a37ff98553fd3a135a42a8ab"
-                target="_blank"
-                class="btn border rounded p-2 hover:bg-[#736665] hover:text-white"
-                >Code Source</a
-              >
-            </div>
-          </div>
-          <div class="md:w-1/2 p-4">
-            <h3 class="text-3xl font-semibold">GameDev</h3>
-            <p>
-              Empowering financial futures with tailored solutions and
-              compassionate client support.
-            </p>
-          </div>
-        </div>
-        <!-- Project 3 -->
-        <div class="flex flex-col md:flex-row items-center mb-10">
-          <div class="md:w-1/2 p-4">
-            <h3 class="text-3xl font-semibold">GameDev</h3>
-            <p>
-              Empowering financial futures with tailored solutions and
-              compassionate client support.
+            <h3 class="text-3xl font-semibold">GameDev w/ Public API</h3>
+            <p class="text-lg">
+              A game library website using React, Tailwind CSS, and JavaScript
+              integrates the FREE-TO-GAME public API, enabling users to search
+              and explore games across various genres with a dynamic,
+              user-friendly interface.
             </p>
           </div>
           <div class="md:w-1/2 p-4">
             <img
-              src="./images/KodeLedger.jpg"
-              class="rounded-lg w-full mb-4"
+              src="./images/miniproject2.png"
+              class="rounded-lg w-full mb-4 card"
               alt="Project 1"
             />
             <div class="flex space-x-4">
               <a
-                href="https://cheery-phoenix-dc3079.netlify.app"
+                href="https://gamedevil.netlify.app"
                 target="_blank"
-                class="btn border rounded p-2 hover:bg-[#736665] hover:text-white"
+                class="btn border-2 rounded p-2 hover:bg-[#736665] hover:text-white"
                 >Live Preview</a
               >
               <a
-                href="https://github.com/jianjio/KodeLedger/commit/7da5bea746317942a37ff98553fd3a135a42a8ab"
+                href="https://github.com/jianjio/MP2-"
                 target="_blank"
-                class="btn border rounded p-2 hover:bg-[#736665] hover:text-white"
+                class="btn border-2 rounded p-2 hover:bg-[#736665] hover:text-white"
                 >Code Source</a
               >
             </div>
